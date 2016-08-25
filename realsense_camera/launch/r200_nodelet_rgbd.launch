@@ -112,4 +112,9 @@
 
   </group> <!-- camera -->
 
+  <node pkg="topic_tools" type="relay" name="relay1" args="/camera/ir/image_raw /stereo_forward/left/image_rect" />
+  <node pkg="topic_tools" type="relay" name="relay2" args="/camera/ir2/image_raw /stereo_forward/right/image_rect" />
+  <node pkg="topic_tools" type="relay" name="relay3" args="/camera/ir/camera_info /stereo_forward/left/camera_info" />
+  <node pkg="topic_tools" type="relay" name="relay4" args="/camera/ir2/camera_info /stereo_forward/right/camera_info" />
+
 </launch>
